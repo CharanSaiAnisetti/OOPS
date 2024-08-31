@@ -16,9 +16,9 @@ public class Main {
 //        System.out.println(Human.population);
 //        System.out.println(Human.population);
 
-        Human pramod = new Human();
+        System.out.println();
 
-        pramod.message1();
+
 
 
     }
