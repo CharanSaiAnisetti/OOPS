@@ -1,8 +1,11 @@
 package Charan.ObjectOrinetedProgramming.OOPS_PRINCIPLES.Abstraction;
 
 public class Son extends Parent1{
-    public Son(int age) {
-        super(age);
+    int age;
+
+    public Son(int age, int parentAge) {
+        super(parentAge);
+        this.age = age;
     }
 
     @Override

@@ -3,7 +3,8 @@ package Charan.ObjectOrinetedProgramming.OOPS_PRINCIPLES.Abstraction;
 public class Main {
 
     public static void main(String[] args) {
-        Son son = new Son(30);
+
+        Son son = new Son(30,55);
         son.career();
 
         son.normal();
@@ -12,6 +13,14 @@ public class Main {
         daughter.career();
 
         Parent1.hello();
-//        Parent1 mom = new Parent1(45);
+        Parent1 mom = new Son(45,60);
+
+        System.out.println(son.age);
+        son.getParentAge();
+        System.out.println(son.age);
+        System.out.println(son.age);
+
+
+        }
     }
-}
+

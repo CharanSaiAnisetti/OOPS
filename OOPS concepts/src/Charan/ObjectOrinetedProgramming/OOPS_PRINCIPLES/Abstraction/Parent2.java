@@ -10,11 +10,11 @@ public abstract class Parent2 {
     }
 
     static void hello(){
-        System.out.println("hey");
+        System.out.println("hey this is parent2");
     }
 
     void normal() {
-        System.out.println("this is a normal method");
+        System.out.println("this is a normal method in parent2");
     }
 
     abstract void career();
