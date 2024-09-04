@@ -1,7 +1,7 @@
 package Charan.ObjectOrinetedProgramming.OOPS_PRINCIPLES.Inheritance;
 
-public class Box {
-    private double l;
+public class Box  {
+    private double l ;
     double h;
     double w;
 //    double weight = 33;
@@ -11,7 +11,7 @@ public class Box {
         System.out.println("Hey, I am in Box class. Greetings!");
     }
 
-    double getl() {
+   protected double getl() {
         return l;
     }
 
@@ -21,7 +21,7 @@ public class Box {
 
     Box() {
         this.h = -1;
-        this.l = l;
+        this.l = -1;
         this.w = -1;
     }
 

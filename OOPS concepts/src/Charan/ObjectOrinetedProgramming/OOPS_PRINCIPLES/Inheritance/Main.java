@@ -6,12 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Box box1 = new Box(4.6, 7.9, 9.9);
-        box1.getL();
-        Box box2 = new Box(box1);
+//        Box box1 = new BoxWeight(4.6, 7.9, 9.9, 2.2);
+//
+////        BoxWeight box2 = (BoxWeight) new Box(4.6, 7.9, 9.9);
+//
+//        System.out.println(box1.w);
 //        System.out.println(box1.w + " " + box1.h);
 
-//        BoxWeight box3 = new BoxWeight();
+//       BoxWeight box3 = new BoxWeight();
 //        BoxWeight box4 = new BoxWeight(2, 3, 4, 8);
 //        System.out.println(box3.h + " " + box3.weight);
 
@@ -30,7 +32,14 @@ public class Main {
 
 //        Box.greeting();
 
-        BoxWeight box = new BoxWeight();
-        BoxWeight.greeting(); // you can inherit but you cannot override
+
+//        BoxWeight.greeting(); // you can inherit but you cannot override
+        Box box= new BoxWeight(1,2,3,4);
+        System.out.println(box.w);
+
+        BoxColor box1 = new BoxColor(1.1,2.2,3.3,4.4, "pramod");
+        System.out.println(box1.w);
+
+
     }
 }
