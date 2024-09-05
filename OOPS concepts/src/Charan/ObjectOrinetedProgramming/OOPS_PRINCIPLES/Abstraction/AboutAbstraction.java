@@ -6,6 +6,8 @@ public class AboutAbstraction {
 //    An abstract class in Java is a class that cannot be instantiated directly. This means you cannot create an object of an abstract class.
 //    It is used to represent general concepts that are meant to be implemented by concrete subclasses.
 //    Abstract classes serve as a blueprint for other classes.
+
+
 //            2. Abstract Methods:
 //
 //    An abstract class can have abstract methods—methods that do not have a body and must be implemented by subclasses.
@@ -17,6 +19,10 @@ public class AboutAbstraction {
 //
 //    The sound() method above is abstract and doesn’t have a body. Any subclass of Animal must provide an implementation for the sound()
 //    method.
+
+
+
+
 //            3. Concrete Methods in Abstract Classes:
 //
 //    Besides abstract methods, an abstract class can also have concrete methods (methods with a body).
@@ -40,7 +46,9 @@ public class AboutAbstraction {
 //
 //    Abstract classes are used when you have a base class that should not be instantiated on its own,
 //    but still contains common methods and fields that all subclasses should inherit.
+
 //    Example Scenario:
+
 //    Suppose you have an abstract class Shape that represents a general concept of a shape.
 //    Different shapes like Circle, Rectangle, and Triangle can be subclasses of Shape.
 //    Each subclass will provide its own implementation of methods like draw() and area().
@@ -95,7 +103,8 @@ public class AboutAbstraction {
 //    Can have both abstract methods and concrete methods.
 //    Can have constructors and member variables.
 //    Use when classes are closely related and share some common code.
-//            Interfaces:
+
+//    Interfaces:
 //    Can only have abstract methods (Java 8 and later allow default and static methods).
 //    Cannot have constructors or instance variables (except for static final variables).
 //    Use when you want to specify what a class should do, but not how it does it (behavioral contracts).
@@ -159,11 +168,37 @@ public class AboutAbstraction {
 //    Summary of Key Points:
 //    Abstract Classes: Cannot be instantiated and can contain both abstract and concrete methods.
 //    Abstract Methods: Must be implemented by subclasses.
-//            Usage: Use abstract classes for a common base of closely related classes that share code.
+//    Usage: Use abstract classes for a common base of closely related classes that share code.
+
 //    Advantages:
 //    Encapsulate common behavior and fields.
 //    Define a template for subclasses.
 //    Reduce code duplication by implementing common logic.
 //    This detailed explanation should provide you with a solid understanding of abstract classes in Java, their purpose,
 //    and how to use them effectively.
+
+
+
+
+    /*
+     * Key Differences Between Abstract Classes and Interfaces
+     *
+     * Feature                Abstract Class                           Interface
+     * ----------------------------------------------------------------------------------------------
+     * Implementation         Can have both abstract and               All methods are abstract
+     *                        concrete methods.                        (until Java 8). Can have
+     *                                                                 default and static methods
+     *                                                                 after Java 8.
+     *-----------------------------------------------------------------------------------------------
+     * Multiple Inheritance   A class can inherit                      A class can implement
+     *                        only one abstract class.                 multiple interfaces.
+     *------------------------------------------------------------------------------------------------
+     * Fields                 Can have instance                        Can only have static and
+     *                        variables (non-static).                  final variables (constants).
+     *-------------------------------------------------------------------------------------------------
+     * Use Case               Use when you want to share               Use when you want to specify
+     *                        behavior between related classes.        a set of behaviors for
+     *                                                                 unrelated classes.
+     */
+
 }
